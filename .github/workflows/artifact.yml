@@ -48,8 +48,8 @@ jobs:
 
     - name: Test ${{ env.FILE_NAME }}
       run: |
-        chmod +x /home/runner/work/ch03-06/ch03-06/test.sh
-        source ./home/runner/work/ch03-06/ch03-06/test.sh
+        chmod +x /home/runner/work/ch03-06/ch03-06/linux/test.sh
+        source ./home/runner/work/ch03-06/ch03-06/linux/test.sh
 
   test-windows:
     name: Test Windows
