@@ -47,7 +47,9 @@ jobs:
         name: linux
 
     - name: Test ${{ env.FILE_NAME }}
-      run: source ./test.sh
+      run: |
+        chmod +x /home/runner/work/ch03-06/ch03-06/test.sh
+        source ./home/runner/work/ch03-06/ch03-06/test.sh
 
   test-windows:
     name: Test Windows
@@ -64,4 +66,4 @@ jobs:
         name: windows
         
     - name: Test ${{ env.FILE_NAME }}
-      run: windows/${{ env.FILE_NAME }}.exe
+      run:  D:\a\ch03-06\ch03-06\${{ env.FILE_NAME }}.exe
